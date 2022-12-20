@@ -22,6 +22,7 @@ while True:
             file.close()
 
             for index, item in enumerate(todos):
+                item = item.strip("\n")
                 row = f"{index + 1}-{item}"
                 print(row)
 
@@ -29,11 +30,14 @@ while True:
             number = int(input("Number of the todo to edit: "))
             new_todo = input("Enter new todo: ")
             todos.__setitem__(number - 1, new_todo)
+
         case "complete":
             number = int(input("Number of the todo to complete: "))
             todos.pop(number - 1)
+
         case "exit":
             break
+
         case _:
             print("Hey, you entered an unknown command!")
 
