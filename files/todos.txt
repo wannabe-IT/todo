@@ -2,3 +2,4 @@ prepare
 shower
 play
 fix
+buy a PS5
