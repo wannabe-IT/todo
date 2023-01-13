@@ -1,2 +1,3 @@
 be better in Python
-go to gym
+next videos
+improve the app
